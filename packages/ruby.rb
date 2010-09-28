@@ -1,8 +1,6 @@
 package :ruby do
-  description 'Ruby Virtual Machine'
-  version '1.8.7'
-  patchlevel '302'
-  source "ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-#{version}-p#{patchlevel}.tar.gz"
+  describe 'Ruby Virtual Machine'
+  apt 'irb libopenssl-ruby libreadline-ruby rdoc ri ruby ruby-dev'
   requires :ruby_dependencies
 
   verify do

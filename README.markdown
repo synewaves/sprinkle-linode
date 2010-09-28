@@ -1,6 +1,8 @@
 # sprinkle-linode
 
-An abstraction of the [Sprinkle](http://github.com/crafterm/sprinkle) scripts I use to set up a [Rails](http://rubyonrails.org) environment on a Debian [Linode](http://linode.com), although it should work on any Debian 5.0 install.
+An abstraction of the [Sprinkle](http://github.com/crafterm/sprinkle) scripts I use to set up a [Rails](http://rubyonrails.org) environment on a Ubuntu 10.04 LTS (Lucid Lynx) [Linode](http://www.linode.com/?r=272ff3b88d6cc2c100904e0ab73ba96305e2664a).
+
+This is based on [Tristan Dunn's version](http://github.com/tristandunn/sprinkle-linode)
 
 ## What does it install?
 
@@ -44,6 +46,7 @@ The MIT License
 
 Copyright (c) 2008-2009 Marcus Crafter crafterm@redartisan.com
 Copyright (c) 2009-2010 Tristan Dunn
+Copyright (c) 2010 Matthew Vince
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

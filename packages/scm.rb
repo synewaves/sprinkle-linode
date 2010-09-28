@@ -11,5 +11,5 @@ end
 
 package :git_dependencies do
   description 'Git build dependencies'
-  apt 'tcl8.4 tk8.4 curl'
+  apt 'git-core tcl8.4 tk8.4 curl'
 end
