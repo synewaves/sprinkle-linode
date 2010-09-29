@@ -23,8 +23,8 @@ It can also copy over any virtual hosts you create in `assets/apache/sites` as w
 1. Install sprinkle, if you do not already have it.
    <pre><code>gem install sprinkle</code></pre>
 
-3. Now download or clone [sprinkle-linode](http://github.com/tristandunn/sprinkle-linode).
-   <pre><code>git clone git://github.com/tristandunn/sprinkle-linode.git</code></pre>
+3. Now download or clone [sprinkle-linode](http://github.com/synewaves/sprinkle-linode).
+   <pre><code>git clone git://github.com/synewaves/sprinkle-linode.git</code></pre>
 
 4. Edit, rename, or remove the the configuration files in <code>./assets/</code>.
 
