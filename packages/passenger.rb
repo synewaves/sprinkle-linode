@@ -9,9 +9,9 @@ package :passenger do
       'touch /etc/apache2/extras/passenger.conf',
       "echo 'Include /etc/apache2/extras/passenger.conf' >> /etc/apache2/apache2.conf"
 
-   ["LoadModule passenger_module /usr/local/lib/ruby/gems/1.8/gems/passenger-#{version}/ext/apache2/mod_passenger.so",
-    "PassengerRoot /usr/local/lib/ruby/gems/1.8/gems/passenger-#{version}",
-    "PassengerRuby /usr/local/bin/ruby"].each do |line|
+   ["LoadModule passenger_module /usr/lib/ruby/gems/1.8/gems/passenger-#{version}/ext/apache2/mod_passenger.so",
+    "PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-#{version}",
+    "PassengerRuby /usr/bin/ruby"].each do |line|
       post :install, "echo '#{line}' >> /etc/apache2/extras/passenger.conf"
     end
 
@@ -20,6 +20,6 @@ package :passenger do
 
   verify do
     has_file '/etc/apache2/extras/passenger.conf'
-    has_file "/usr/local/lib/ruby/gems/1.8/gems/passenger-#{version}/ext/apache2/mod_passenger.so"
+    has_file "/usr/lib/ruby/gems/1.8/gems/passenger-#{version}/ext/apache2/mod_passenger.so"
   end
 end

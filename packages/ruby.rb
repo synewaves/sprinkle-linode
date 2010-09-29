@@ -12,6 +12,7 @@ package :rubygems do
   version '1.3.7'
   source "http://production.cf.rubygems.org/rubygems/rubygems-#{version}.tgz" do
     custom_install 'ruby setup.rb'
+    post :install, 'update-alternatives --install /usr/bin/gem gem /usr/bin/gem1.8 1'
   end
   requires :ruby
 
