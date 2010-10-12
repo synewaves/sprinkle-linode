@@ -9,14 +9,16 @@ This is based on [Tristan Dunn's version](http://github.com/tristandunn/sprinkle
 * Apache
 * git
 * monit
-* MySQL
+* MySQL or mongoDB
 * Passenger
-* Ruby
+* Ruby Enterprise Edition
 * Gems
   * mysql
+  * mongoid
   * rails
 
-It can also copy over any virtual hosts you create in `assets/apache/sites` as well as run any setup SQL by placing your statements in `assests/database/setup.sql`.
+It can also copy over any custom Apache configs from `assets/apache/configs`.
+It will also run any MySQL setup SQL by placing your statements in `assests/database/setup.sql`.
 
 ## Quick Start
 

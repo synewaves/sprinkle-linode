@@ -211,12 +211,21 @@ check process apache2 with pidfile /var/run/apache2.pid
   if children > 250 then restart
   if 5 restarts within 5 cycles then timeout
 
-check process mysql with pidfile /var/run/mysqld/mysqld.pid
-  group database
-  start program = "/etc/init.d/mysql start"
-  stop program  = "/etc/init.d/mysql stop"
-  if failed host 127.0.0.1 port 3306 then restart
-  if 5 restarts within 5 cycles then timeout
+# check process mysql with pidfile /var/run/mysqld/mysqld.pid
+#   group database
+#   start program = "/etc/init.d/mysql start"
+#   stop program  = "/etc/init.d/mysql stop"
+#   if failed host 127.0.0.1 port 3306 then restart
+#   if 5 restarts within 5 cycles then timeout
+
+# check host mongodb with address localhost
+#   start program = "service mongodb start"
+#   stop program = "service mongodb stop"
+#   if failed port 28017 protocol HTTP
+#     request /
+#     with timeout 10 seconds
+#     then start
+
 
 ###############################################################################
 ## Includes

@@ -6,3 +6,5 @@ set :run_method, :run
 
 # Be sure to fill in your server host name or IP.
 role :app, 'your-host-name-or-ip'
+
+default_run_options[:pty] = true

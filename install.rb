@@ -1,18 +1,20 @@
 require 'packages/apache'
-require 'packages/database'
 require 'packages/essential'
 require 'packages/gems'
+require 'packages/git'
+require 'packages/mongodb'
 require 'packages/monit'
+require 'packages/mysql'
 require 'packages/passenger'
 require 'packages/ruby'
-require 'packages/scm'
 
 policy :linode, :roles => :app do
   requires :build_essential
   requires :apache
+  requires :apache_configuration
   requires :database
   requires :gems
-  requires :monit
+  requires :monitoring
   requires :passenger
   requires :ruby
   requires :scm
