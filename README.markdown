@@ -1,6 +1,8 @@
 # sprinkle-linode
 
-An abstraction of the [Sprinkle](http://github.com/crafterm/sprinkle) scripts I use to set up a [Rails](http://rubyonrails.org) environment on a Ubuntu 10.04 LTS (Lucid Lynx) [Linode](http://www.linode.com/?r=272ff3b88d6cc2c100904e0ab73ba96305e2664a).
+An abstraction of the [Sprinkle](http://github.com/crafterm/sprinkle) scripts I use to set up a [Rails](http://rubyonrails.org) environment on a Ubuntu 10.04 LTS (Lucid Lynx) [Linode](http://www.linode.com/?r=272ff3b88d6cc2c100904e0ab73ba96305e2664a) (also works on Ubuntu 10.10).
+
+
 
 This is based on [Tristan Dunn's version](http://github.com/tristandunn/sprinkle-linode)
 
